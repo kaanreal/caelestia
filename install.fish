@@ -202,6 +202,18 @@ if confirm-overwrite $config/btop
     ln -s (realpath btop) $config/btop
 end
 
+# Cli Config
+if confirm-overwrite $config/cli
+    log 'Installing cli config...'
+    ln -s (realpath cli.json) $config/caelestia
+end
+
+# Shell Config
+if confirm-overwrite $config/caelestia/shell.conf
+    log 'Installing shell config...'
+    ln -s (realpath shell.json) $config/caelestia
+end
+
 # Install spicetify
 if set -q _flag_spotify
     log 'Installing spotify (spicetify)...'

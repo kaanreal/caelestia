@@ -1,0 +1,88 @@
+{
+    "record": {
+        "extraArgs": []
+    },
+    "wallpaper": {
+        "postHook": "echo $WALLPAPER_PATH"  
+    },
+    "theme": {
+        "enableTerm": true,
+        "enableHypr": true,
+        "enableDiscord": true,
+        "enableSpicetify": true,
+        "enableFuzzel": true,
+        "enableBtop": true,
+        "enableGtk": true,
+        "enableQt": true
+    },
+    "toggles": {
+        "osu": {
+            "osu": {
+                "enable": true,
+                "match": [{ "class": "osu!.exe" }],
+                "command": ["gtk-launch", "osu-wine"],
+                "move": true,
+                "waitForWindow": true
+            },
+            "firefox": {
+                "enable": true,
+                "match": [{ "class": "firefox" }],
+                "move": true
+            }
+        },
+        "browser": {
+            "chrome": {
+                "enable": true,
+                "match": [{ "class": "chrome" }],
+                "command": ["google-chrome-stable"],
+                "move": true
+            },
+            "firefox": {
+                "enable": true,
+                "match": [{ "class": "firefox" }],
+                "move": true
+            }
+        },
+        "communication": {
+            "discord": {
+                "enable": true,
+                "match": [{ "class": "discord" }],
+                "command": ["discord"],
+                "move": true
+            },
+            "whatsapp": {
+                "enable": true,
+                "match": [{ "class": "whatsapp" }],
+                "move": true
+            }
+        },
+        "music": {
+            "spotify": {
+                "enable": true,
+                "match": [{ "class": "Spotify" }, { "initialTitle": "Spotify" }, { "initialTitle": "Spotify Free" }],
+                "command": ["spicetify", "watch", "-s"],
+                "move": true
+            },
+            "feishin": {
+                "enable": true,
+                "match": [{ "class": "feishin" }],
+                "move": true
+            }
+        },
+        "sysmon": {
+            "btop": {
+                "enable": true,
+                "match": [{ "class": "btop", "title": "btop", "workspace": { "name": "special:sysmon" } }],
+                "command": ["foot", "-a", "btop", "-T", "btop", "fish", "-C", "exec btop"]
+            }
+        },
+        "todo": {
+            "todoist": {
+                "enable": true,
+                "match": [{ "class": "Todoist" }],
+                "command": ["todoist"],
+                "move": true
+            }
+        }
+    }
+}
