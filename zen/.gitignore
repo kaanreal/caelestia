@@ -1,11 +1,3 @@
-/hypr/scheme/current.conf
-
-/spicetify/config-xpui.ini
-/spicetify/Themes/caelestia/color.ini
-
-/btop/btop.log
-/btop/themes/
-
-/fish/fish_variables
-
-.SRCINFO
+node_modules/
+dist/
+web-ext-artifacts/
