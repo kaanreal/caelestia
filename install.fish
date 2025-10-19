@@ -91,7 +91,7 @@ echo '│   \____/\__,_/\___/_/\___/____/\__/_/\__,_/     │'
 echo '│                                                 │'
 echo '╰─────────────────────────────────────────────────╯'
 set_color normal
-log 'Welcome to the Caelestia dotfiles installer!'
+log 'Welcome to the Caelestia dotfiles installer! (Edit From Kaanreal)'
 log 'Before continuing, please ensure you have made a backup of your config directory.'
 
 # Prompt for backup
@@ -203,13 +203,13 @@ if confirm-overwrite $config/btop
 end
 
 # Cli Config
-if confirm-overwrite $config/cli
+if confirm-overwrite $config/caelestia/cli.json
     log 'Installing cli config...'
     ln -s (realpath cli.json) $config/caelestia
 end
 
 # Shell Config
-if confirm-overwrite $config/caelestia/shell.conf
+if confirm-overwrite $config/caelestia/shell.json
     log 'Installing shell config...'
     ln -s (realpath shell.json) $config/caelestia
 end
