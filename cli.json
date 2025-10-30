@@ -23,11 +23,6 @@
                 "command": ["gtk-launch", "osu-wine"],
                 "move": true,
                 "waitForWindow": true
-            },
-            "firefox": {
-                "enable": true,
-                "match": [{ "class": "firefox" }],
-                "move": true
             }
         },
         "browser": {

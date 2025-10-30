@@ -159,6 +159,10 @@ else
 end
 fish -c 'rm -f caelestia-meta-*.pkg.tar.zst' 2> /dev/null
 
+# Install Bibata cursor theme
+log 'Installing Bibata cursor theme...'
+$aur_helper -S --needed bibata-cursor-theme-bin $noconfirm
+
 # Install hypr* configs
 if confirm-overwrite $config/hypr
     log 'Installing hypr* configs...'
