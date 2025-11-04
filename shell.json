@@ -33,7 +33,7 @@
     },
     "general": {
         "apps": {
-            "terminal": ["foot"],
+            "terminal": ["kitty"],
             "audio": ["pavucontrol"],
             "playback": ["mpv"],
             "explorer": ["nautilus"]
@@ -321,7 +321,7 @@
     "notifs": {
         "actionOnClick": true,
         "clearThreshold": 0.3,
-        "defaultExpireTimeout": 500,
+        "defaultExpireTimeout": 5000,
         "expandThreshold": 20,
         "expire": true
     },
