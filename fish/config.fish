@@ -40,3 +40,5 @@ if status is-interactive
         echo -en "\e]133;A\e\\"
     end
 end
+
+fish_add_path /home/kaandev/.spicetify
